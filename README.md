@@ -1,11 +1,11 @@
 # Startpage 
 
-Inspired by [Tilde](https://cadejscroggins.github.io/tilde/).
+Forked from [aflavio](https://github.com/aflavio/startpage).
 
 
 ## Demo
 
-[Demo](https://cdn.rawgit.com/aflavio/startpage/master/index.html)
+[Demo](https://cdn.rawgit.com/MerlinR/startpage/master/index.html)
 
 ## Usage
 
