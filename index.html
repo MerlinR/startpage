@@ -8,33 +8,42 @@
       { name: "Google", commands: [
         { key: 'd', name: 'Drive', url: 'https://drive.google.com/drive', search: '/search?q=' },
         { key: 'g', name: 'Gmail', url: 'https://gmail.com', search: '/#search/' },
-        { key: 'k', name: 'Keep', url: 'https://keep.google.com', search: '/#search/text=' },
+        { key: 'c', name: 'Calander', url: 'https://calendar.google.com/', search: '' },
         { key: 'nt', name: 'Netflix', url: 'https://www.netflix.com', search: '/search?q=' },
         { key: 'y', name: 'YouTube', url: 'https://www.youtube.com', search: '/results?search_query=' },
       ] },
       { name: "Devel", commands: [
-        { key: 'b', name: 'Bitbucket', url: 'https://bitbucket.com', search: '/search?q=' },
         { key: 'gh', name: 'GitHub', url: 'https://github.com', search: '/search?q=' },
+        { key: 'so', name: 'StackOverflow', url: 'https://stackoverflow.com/', search: '/search?q=' },
+        { key: 'cw', name: 'CodeWars', url: 'https://www.codewars.com/dashboard', search: '/#/' },
       ] },
       { name: "News", commands: [
-        { key: 'c', name: 'CNN', url: 'http://cnn.com', search: '/search/?text=' },
-        { key: 'n', name: 'NYTimes', url: 'http://www.nytimes.com', search: '/search/sitesearch/#/' },
-        { key: 'f', name: 'Folha', url: 'http://folha.com.br', search: '' },
+        { key: 'b', name: 'BBC', url: 'http://www.bbc.co.uk/news', search: '/search?q=' },
         { key: 'r', name: 'Reddit', url: 'http://www.reddit.com', search: '/search?q=' },
-        { key: 't', name: 'O Tempo', url: 'http://otempo.com.br', search: '/busca-7.10677?q=' },
       ] },
       { name: "Media/Tools", commands: [
-        { key: 's', name: 'Spotify', url: 'https://spotify.com', search: '/search?q=' },
+        { key: 'li', name: 'Linkdin', url: 'https://www.linkedin.com/', search: '/search/results/index/?keywords=' },
+        { key: 'f', name: 'Facebook', url: 'https://www.facebook.com/', search: '/search/top/?q=' },
+        { key: 'img', name: 'Imgur', url: 'https://imgur.com/', search: '/search?q=' },
+        { key: 'tw', name: 'Twitch', url: 'https://www.twitch.tv/', search: '/search?q=' },
         { key: 'wa', name: 'Whatsapp', url: 'https://web.whatsapp.com', search: '#' },
       ] },
       { name: "Education", commands: [
-        { key: 'ka', name: 'Khan Academy', url: 'https://www.khanacademy.org', search: '/search?page_search_query=' },
-        { key: 'w', name: 'Wikipedia', url: 'https://en.wikipedia.org', search: '/wiki/' },
+        { key: 'bb', name: 'Blackboard', url: 'https://blackboard.uwe.ac.uk/', search: '/blackboard' },
+        { key: 'UWE', name: 'MyUWE', url: 'https://my.uwe.ac.uk/', search: '/MyUWE' },
+      ] },
+      { name: "Shop", commands: [
+        { key: 'am', name: 'Amazon', url: 'https://www.amazon.co.uk/', search: '/s/ref=nb_sb_noss?url=search-alias%3Daps&field-keywords=' },
+        { key: 'e', name: 'Ebay', url: 'http://www.ebay.co.uk/', search: '/sch/i.html?_from=R40&_trksid=p2050601.m570.l1313.TR12.TRC2.A0.H0.Xt440p+dock.TRS0&_nkw=' },
+      ] },
+      { name: "Local", commands: [
+        { key: 'rt', name: 'Router', url: 'http://192.168.0.1/', search: '' },
+        { key: 'nas', name: 'NAS', url: 'http://192.168.0.17/', search: '' },
       ] },
     ],
 
     // if none of the keys are matched, this is used for searching.
-    defaultSearch: 'https://www.google.com/search?q=',
+    defaultSearch: 'https://duckduckgo.com/?q=',
 
     // the delimiter between the key and your search query.
     // e.g. to search GitHub for potatoes you'd type "g:potatoes".
@@ -73,7 +82,7 @@
 <meta name="viewport" content="width=device-width, initial-scale=1">
 <meta name="robots" content="noindex">
 
-<title>~</title>
+<title>~StartPage</title>
 
 <style type="text/css">
   @font-face {
@@ -200,8 +209,8 @@
     margin: 0;
     padding: 14px;
     border-radius: 2px 2px 0 0;
-    background: #30a388;
-    color: #165b4b;
+    background: #9B300E;
+    color: white;
     font-size: .7rem;
     text-transform: uppercase;
     text-align: center;
