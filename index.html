@@ -8,8 +8,6 @@
       { name: "Google", commands: [
         { key: 'dr', name: 'Drive', url: 'https://drive.google.com/drive', search: '/search?q=' },
         { key: 'gm', name: 'Gmail', url: 'https://gmail.com', search: '/#search/' },
-        { key: 'cl', name: 'Calander', url: 'https://calendar.google.com/', search: '' },
-        { key: 'nt', name: 'Netflix', url: 'https://www.netflix.com', search: '/search?q=' },
         { key: 'yt', name: 'YouTube', url: 'https://www.youtube.com', search: '/results?search_query=' },
       ] },
       { name: "Devel", commands: [
@@ -29,8 +27,7 @@
         { key: 'wa', name: 'Whatsapp', url: 'https://web.whatsapp.com', search: '#' },
       ] },
       { name: "Education", commands: [
-        { key: 'bb', name: 'Blackboard', url: 'https://blackboard.uwe.ac.uk/', search: '/blackboard' },
-        { key: 'UWE', name: 'MyUWE', url: 'https://my.uwe.ac.uk/', search: '/MyUWE' },
+        { key: 'uwe', name: 'MyUWE', url: 'https://my.uwe.ac.uk/', search: '/MyUWE' },
       ] },
       { name: "Shop/Bills", commands: [
         { key: 'am', name: 'Amazon', url: 'https://www.amazon.co.uk/', search: '/s/ref=nb_sb_noss?url=search-alias%3Daps&field-keywords=' },
@@ -38,10 +35,6 @@
         { key: 'nw', name: 'Natwest', url: 'http://personal.natwest.com/', search: '' },
         { key: 'O2', name: 'O2', url: 'https://accounts.o2.co.uk/signin', search: '' },
         
-      ] },
-      { name: "Local", commands: [
-        { key: 'rt', name: 'Router', url: 'http://192.168.0.1/', search: '' },
-        { key: 'nas', name: 'NAS', url: 'http://192.168.0.17/', search: '' },
       ] },
     ],
 
@@ -61,7 +54,7 @@
     instantRedirect: false,
 
     // suggest your most popular queries as you type.
-    suggestions: true,
+    suggestions: false,
 
     // max amount of suggestions to display.
     suggestionsLimit: 4,
@@ -89,8 +82,17 @@
 
 <style type="text/css">
   @font-face {
-    font-family: 'Lato';
+    font-family: 'Noto Mono';
     src: url('https://fonts.gstatic.com/s/lato/v11/22JRxvfANxSmnAhzbFH8PgLUuEpTyoUstqEm5AMlJo4.woff2') format('woff2');
+  }
+
+  :root {
+    --main-bg-color: #26242D;
+    --box-bg-color-one: #D4D4D4;
+    --box-bg-color-two: #F3F4F5;
+    --trim-color: #E4582B;
+    --text-color-one: #D4D4D4;
+    --text-color-two: #26242D;
   }
 
   body {
@@ -102,8 +104,8 @@
     margin: 0;
     padding: 0;
     color: white;
-    background-color: #222;
-    font-family: 'Lato', sans-serif;
+    background-color: var(--main-bg-color);
+    font-family: 'Noto Mono', regular;
   }
 
   main {
@@ -131,11 +133,11 @@
     width: 100%;
     margin: 0;
     border: 0;
-    background: #fff;
+    background: var(--box-bg-color-one);
     outline: 0;
     -webkit-appearance: none;
     -moz-appearance: none;
-    color: #222;
+    color: #D4D4D4;
     font-family: 'Lato', sans-serif;
   }
 
@@ -171,7 +173,7 @@
 
   .search-suggestion:hover,
   .search-suggestion:focus {
-    background: #30a388;
+    background: var(--box-bg-color-one);
   }
 
   .overlay {
@@ -183,7 +185,7 @@
     height: 100%;
     padding: 0 10px;
     transition: 200ms;
-    background: #222;
+    background: var(--main-bg-color);
     visibility: visible;
     opacity: 1;
     overflow: auto;
@@ -212,8 +214,8 @@
     margin: 0;
     padding: 14px;
     border-radius: 2px 2px 0 0;
-    background: #9B300E;
-    color: white;
+    background: var(--trim-color);
+    color: var(--box-bg-color-one);
     font-size: .7rem;
     text-transform: uppercase;
     text-align: center;
@@ -221,19 +223,24 @@
 
   .command {
     transition: background 200ms;
-    background: #333;
+    background: var(--box-bg-color-one);
+    color: var(--box-bg-color-two);
+
   }
 
   .command:hover {
-    background: #313131;
+    background: var(--main-bg-color);
+    color: var(--box-bg-color-one);
   }
 
   .command:nth-child(even) {
-    background: #3a3a3a;
+    background: var(--box-bg-color-two);
+    color: var(--box-bg-color-two);
   }
 
   .command:nth-child(even):hover {
-    background: #383838;
+    background: var(--main-bg-color);
+    color: var(--box-bg-color-one);
   }
 
   .command:last-of-type {
@@ -243,7 +250,7 @@
   .command a {
     display: block;
     padding: 14px 12px;
-    color: #eee;
+    color: var(--box-bg-color-one);
     font-size: .8rem;
     line-height: 1.3rem;
     text-decoration: none;
@@ -255,7 +262,7 @@
     margin-right: 10px;
     float: left;
     border-radius: 2px;
-    background: #292929;
+    background: var(--main-bg-color);
     font-family: 'Courier New', monospace;
     text-align: center;
   }
