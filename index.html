@@ -230,7 +230,6 @@
 
   .command:hover {
     background: var(--main-bg-color);
-    color: var(--box-bg-color-one);
   }
 
   .command:nth-child(even) {
@@ -240,7 +239,6 @@
 
   .command:nth-child(even):hover {
     background: var(--main-bg-color);
-    color: var(--box-bg-color-one);
   }
 
   .command:last-of-type {
@@ -250,10 +248,14 @@
   .command a {
     display: block;
     padding: 14px 12px;
-    color: var(--box-bg-color-one);
+    color: var(--main-bg-color);
     font-size: .8rem;
     line-height: 1.3rem;
     text-decoration: none;
+  }
+
+  .command a:hover{
+    color: var(--box-bg-color-one);
   }
 
   .command-key {
@@ -263,6 +265,7 @@
     float: left;
     border-radius: 2px;
     background: var(--main-bg-color);
+    color: var(--box-bg-color-one);
     font-family: 'Courier New', monospace;
     text-align: center;
   }
