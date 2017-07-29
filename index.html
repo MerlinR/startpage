@@ -15,28 +15,25 @@
         { key: 'gh', name: 'GitHub', url: 'https://github.com', search: '/search?q=' },
         { key: 'so', name: 'StackOverflow', url: 'https://stackoverflow.com/', search: '/search?q=' },
         { key: 'cw', name: 'CodeWars', url: 'https://www.codewars.com/dashboard', search: '/#/' },
+        { key: 'wiki', name: 'Wikipedia', url: 'https://en.wikipedia.org', search: '/wiki/' },
       ] },
       { name: "News", commands: [
         { key: 'bbc', name: 'BBC', url: 'http://www.bbc.co.uk/news', search: '/search?q=' },
+        { key: 'tgd', name: 'The Guardian', url: 'https://www.theguardian.com/uk', search: '' },
         { key: 'rd', name: 'Reddit', url: 'http://www.reddit.com', search: '/search?q=' },
       ] },
       { name: "Media/Tools", commands: [
         { key: 'li', name: 'Linkdin', url: 'https://www.linkedin.com/', search: '/search/results/index/?keywords=' },
         { key: 'fb', name: 'Facebook', url: 'https://www.facebook.com/', search: '/search/top/?q=' },
         { key: 'img', name: 'Imgur', url: 'https://imgur.com/', search: '/search?q=' },
-        { key: 'tw', name: 'Twitch', url: 'https://www.twitch.tv/', search: '/search?q=' },
         { key: 'wa', name: 'Whatsapp', url: 'https://web.whatsapp.com', search: '#' },
       ] },
-      { name: "Education", commands: [
-        { key: 'uwe', name: 'MyUWE', url: 'https://my.uwe.ac.uk/', search: '/MyUWE' },
-        { key: 'wiki', name: 'Wikipedia', url: 'https://en.wikipedia.org', search: '/wiki/' },
-      ] },
       { name: "Shop/Bills", commands: [
+        { key: 'nw', name: 'Natwest', url: 'http://personal.natwest.com/', search: '' },
+        { key: 'o2', name: 'O2', url: 'https://accounts.o2.co.uk/signin', search: '' },
         { key: 'am', name: 'Amazon', url: 'https://www.amazon.co.uk/', search: '/s/ref=nb_sb_noss?url=search-alias%3Daps&field-keywords=' },
         { key: 'eb', name: 'Ebay', url: 'http://www.ebay.co.uk/', search: '/sch/i.html?_from=R40&_trksid=p2050601.m570.l1313.TR12.TRC2.A0.H0.Xt440p+dock.TRS0&_nkw=' },
-        { key: 'nw', name: 'Natwest', url: 'http://personal.natwest.com/', search: '' },
-        { key: 'O2', name: 'O2', url: 'https://accounts.o2.co.uk/signin', search: '' },
-        
+        { key: 'gt', name: 'GumTree', url: 'https://www.gumtree.com/', search: '/search?search_category=all&q=' },
       ] },
     ],
 
@@ -89,12 +86,12 @@
   }
 
   :root {
-    --main-bg-color: #26242D;
+    --main-bg-color: #232F39;
     --box-bg-color-one: #D4D4D4;
     --box-bg-color-two: #F3F4F5;
     --trim-color: #E4582B;
     --text-color-one: #D4D4D4;
-    --text-color-two: #26242D;
+    --text-color-two: #232F39;
   }
 
   body {
@@ -213,11 +210,11 @@
 
   .category-name {
     margin: 0;
-    padding: 14px;
+    padding: 10px;
     border-radius: 2px 2px 0 0;
     background: var(--trim-color);
     color: var(--box-bg-color-one);
-    font-size: .7rem;
+    font-size: .8rem;
     text-transform: uppercase;
     text-align: center;
   }
@@ -226,7 +223,6 @@
     transition: background 200ms;
     background: var(--box-bg-color-one);
     color: var(--box-bg-color-two);
-
   }
 
   .command:hover {
@@ -250,7 +246,7 @@
     display: block;
     padding: 14px 12px;
     color: var(--main-bg-color);
-    font-size: .8rem;
+    font-size: .9rem;
     line-height: 1.3rem;
     text-decoration: none;
   }
@@ -268,6 +264,7 @@
     background: var(--main-bg-color);
     color: var(--box-bg-color-one);
     font-family: 'Courier New', monospace;
+    font-size: .8rem;
     text-align: center;
   }
 
