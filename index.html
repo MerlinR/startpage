@@ -8,7 +8,6 @@
       { name: "Google", commands: [
         { key: 'dr', name: 'Drive', url: 'https://drive.google.com/drive', search: '/search?q=' },
         { key: 'gm', name: 'Gmail', url: 'https://gmail.com', search: '/#search/' },
-        { key: 'go', name: 'Google', url: 'https://www.google.co.uk/', search: '/search?q=' },
         { key: 'yt', name: 'YouTube', url: 'https://www.youtube.com', search: '/results?search_query=' },
       ] },
       { name: "Devel", commands: [
@@ -35,10 +34,16 @@
         { key: 'eb', name: 'Ebay', url: 'http://www.ebay.co.uk/', search: '/sch/i.html?_from=R40&_trksid=p2050601.m570.l1313.TR12.TRC2.A0.H0.Xt440p+dock.TRS0&_nkw=' },
         { key: 'gt', name: 'GumTree', url: 'https://www.gumtree.com/', search: '/search?search_category=all&q=' },
       ] },
+      { name: "LAN", commands: [
+        { key: 'pf', name: 'PFsense', url: 'http://192.168.2.1/', search: '' },
+        { key: 'prox', name: 'Proxmox', url: 'https://192.168.2.3:8006/', search: '' },
+        { key: 'plex', name: 'Plex', url: 'http://192.168.2.20:32400/web/index.html', search: '' },
+        { key: 'tran', name: 'Transmission', url: 'http://192.168.2.21:9091/transmission/web/', search: '' },
+      ] },
     ],
 
     // if none of the keys are matched, this is used for searching.
-    defaultSearch: 'https://duckduckgo.com/?q=',
+    defaultSearch: 'https://www.google.co.uk/search?q=',
 
     // the delimiter between the key and your search query.
     // e.g. to search GitHub for potatoes you'd type "g:potatoes".
