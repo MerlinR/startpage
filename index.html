@@ -12,6 +12,7 @@
         { key: 'mp', name: 'Google Maps', url: 'https://www.google.com/maps', search: '/search/'},
       ] },
       { name: "Devel", commands: [
+        { key: 'gl', name: 'GitLab', url: 'https://gitlabmroe.dyndns.org/', search: '' },
         { key: 'gh', name: 'GitHub', url: 'https://github.com', search: '/search?q=' },
         { key: 'so', name: 'StackOverflow', url: 'https://stackoverflow.com/', search: '/search?q=' },
         { key: 'cw', name: 'CodeWars', url: 'https://www.codewars.com/dashboard', search: '/#/' },
@@ -25,7 +26,6 @@
       { name: "Media/Tools", commands: [
         { key: 'li', name: 'Linkdin', url: 'https://www.linkedin.com/', search: '/search/results/index/?keywords=' },
         { key: 'fb', name: 'Facebook', url: 'https://www.facebook.com/', search: '/search/top/?q=' },
-        { key: 'img', name: 'Imgur', url: 'https://imgur.com/', search: '/search?q=' },
         { key: 'wa', name: 'Whatsapp', url: 'https://web.whatsapp.com', search: '#' },
       ] },
       { name: "Shop/Bills", commands: [
@@ -37,10 +37,11 @@
         { key: 'gt', name: 'GumTree', url: 'https://www.gumtree.com/', search: '/search?search_category=all&q=' },
       ] },
       { name: "LAN", commands: [
-        { key: 'pf', name: 'PFsense', url: 'http://192.168.2.1/', search: '' },
+        { key: 'wrt', name: 'OpenWRT', url: 'openwrt.lan', search: '' },
+        { key: 'wiki', name: 'DokuWiki', url: 'dokuwiki.lan', search: '' },
         { key: 'prox', name: 'Proxmox', url: 'https://192.168.2.3:8006/', search: '' },
-        { key: 'plex', name: 'Plex', url: 'http://192.168.2.20:32400/web/index.html', search: '' },
-        { key: 'tran', name: 'Transmission', url: 'http://192.168.2.21:9091/transmission/web/', search: '' },
+        { key: 'plex', name: 'Plex', url: 'plex.lan:32400/web/index.html', search: '' },
+        { key: 'graf', name: 'Grafana', url: 'plex.lan:32400/web/index.html', search: '' },
       ] },
     ],
 
@@ -93,7 +94,7 @@
   }
 
   :root {
-    --main-bg-color: #232F39;
+    --main-bg-color: #22262E;
     --box-bg-color-one: #D4D4D4;
     --box-bg-color-two: #F3F4F5;
     --trim-color: #E4582B;
